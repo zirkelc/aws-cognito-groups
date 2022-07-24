@@ -6,6 +6,7 @@ import {
 } from '@aws-sdk/client-cognito-identity-provider';
 
 const region = 'eu-west-1';
+// replace with your own test user pool id
 const UserPoolId = 'eu-west-1_mAUElNRxp';
 const GroupName = 'test-group';
 
