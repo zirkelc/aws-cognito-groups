@@ -1,0 +1,26 @@
+{
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "removeComments": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*",
+    "amplify/**/*",
+    "src/aws-exports.js"
+  ],
+  "ts-node": {
+    "esm": true
+  }
+}
